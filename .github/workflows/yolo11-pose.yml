@@ -34,7 +34,7 @@ jobs:
         cd yolo
         mkdir -pv onnx
         cd onnx
-        wget https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-pose.pt -O yolo.pt
+        wget https://github.com/wanzibaobei/model_convert/releases/download/1/apex_best.pt -O yolo.pt
         python ../export_pose_v11.pyc -w yolo.pt --sim
 
     - name: Upload artifact
